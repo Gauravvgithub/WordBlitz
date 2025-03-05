@@ -395,7 +395,7 @@ function startGame() {
         score.innerHTML = count
         timer.innerHTML = timer
         message.innerHTML = ''
-        wpmDisplay.innerHTML = "WPM: 0"; // Reset WPM
+        wpmDisplay.innerHTML = "0"; // Reset WPM
         startTime = new Date().getTime(); // Set start time
         showWord()
         wordInput.addEventListener('input', startMatch)
@@ -442,7 +442,7 @@ function countDown() {
 function updateWPM() {
     let elapsedTime = (new Date().getTime() - startTime) / 60000; // Convert to minutes
     let wpm = elapsedTime > 0 ? Math.round(count / elapsedTime) : 0; // Avoid division by zero
-    wpmDisplay.innerHTML = `WPM: ${wpm}`;
+    wpmDisplay.innerHTML = `${wpm}`;
 }
 
 function gameOver() {
