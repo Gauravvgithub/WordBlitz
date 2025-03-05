@@ -395,7 +395,7 @@ function startGame() {
         score.innerHTML = count
         timer.innerHTML = timer
         message.innerHTML = ''
-        wpmDisplay.innerHTML = "WPM: 0"; // Reset WPM
+        wpmDisplay.innerHTML = "0"; // Reset WPM
         startTime = new Date().getTime(); // Set start time
         showWord()
         wordInput.addEventListener('input', startMatch)
