@@ -1,5 +1,10 @@
 * {
-    font-family: 'SF Pro Rounded Medium'!important;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+
+}
+
+.h3, h3 {
+    font-size: 1.37rem !important;
 }
 
 .bg-dark {
@@ -76,16 +81,19 @@
     color: #28a745;
 }
 
-@media(max-width: 768px){
-    body{
+@media(max-width: 768px) {
+    body {
         font-weight: 900 !important;
     }
-    .lead{
+
+    .lead {
         font-size: 12px !important;
     }
+
     .display-2 {
         font-size: 68px !important;
     }
+
     .offset-3 {
         margin-left: 0 !important;
     }
