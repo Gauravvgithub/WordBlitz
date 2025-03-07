@@ -471,3 +471,13 @@ function resetGame() {
     clearInterval(interval);
     interval = setInterval(countDown, 1000);
 }
+
+// Visitor Count
+let visitorsCount = localStorage.getItem('page_view');
+if (visitorsCount === null) {
+    visitorsCount = 1;
+} else {
+    visitorsCount = parseInt(visitorsCount) + 1;
+}
+localStorage.setItem('page_view', visitorsCount);
+document.getElementById('counter').textContent = `Visitors: ${visitorsCount}`;
